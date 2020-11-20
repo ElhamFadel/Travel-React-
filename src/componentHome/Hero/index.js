@@ -58,6 +58,7 @@ const Layer = styled.div`
 const HeroContent = styled.div`
   z-index: 3;
   max-height: 100%;
+  margin-left: 11rem;
 `;
 const HeroItems = styled.div`
   display: flex;
@@ -71,6 +72,8 @@ const HeroItems = styled.div`
   padding: 0;
   text-align: center;
   font-weight: bold;
+  justify-content: flex-end;
+  height: 16rem;
 `;
 const HeroH1 = styled.h1`
   font-size: clamp(1.5rem, 6vw, 4rem);
@@ -83,7 +86,6 @@ const HeroP = styled.p`
   font-size: clamp(1rem, 1rem, 2rem);
   width: 70%;
   line-height: 1.5;
-  margin-inline-start: auto;
   font-weight: 400;
 `;
 const VideoBg = styled.video`
