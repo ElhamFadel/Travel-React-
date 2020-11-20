@@ -5,6 +5,6 @@ const Container = styled.div`
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
+  max-width: 90%;
 `;
 export default Container;

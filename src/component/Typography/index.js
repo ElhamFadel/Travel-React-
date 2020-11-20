@@ -13,8 +13,10 @@ export const Para = styled.p`
   line-height: 1.6em;
 `;
 export const H3 = styled.h3`
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  line-height: 1.3;
+  color: #222;
 `;
 export const H4 = styled.h4`
   font-family: "Poppins", sans-serif;

@@ -19,7 +19,6 @@ function App() {
           </Route> */}
         </Switch>
       </Router>
-      <span class="lnr lnr-mustache"></span>
     </div>
   );
 }
