@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -7,6 +7,15 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
     font-family: "Roboto",  Sans-Serif;
   }
+`;
+export const RowHead = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export default GlobalStyle;
