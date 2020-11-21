@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing:border-box;
     font-family: "Roboto",  Sans-Serif;
+    overflow:hidden
   }
 `;
 export const RowHead = styled.div`

@@ -4,6 +4,7 @@ import Hero from "../../componentHome/Hero";
 import Features from "../../componentHome/Features";
 import OurSelectionReasone from "../../componentHome/ourSelectionReasone";
 import SliderLatest from "../../componentHome/SliderLatest/index";
+import QuestionSection from "../../componentHome/QuestionSection";
 
 function index() {
   return (
@@ -13,6 +14,7 @@ function index() {
       <OurSelectionReasone />
       <Features />
       <SliderLatest />
+      <QuestionSection />
     </>
   );
 }
