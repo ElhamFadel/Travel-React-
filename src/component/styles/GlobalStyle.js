@@ -11,11 +11,13 @@ const GlobalStyle = createGlobalStyle`
 export const RowHead = styled.div`
   display: flex;
   justify-content: center;
+  text-align-last: center;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 `;
 
 export default GlobalStyle;
