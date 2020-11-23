@@ -22,7 +22,6 @@ function index() {
           </Button>
         </HeroItems>
       </HeroContent>
-      <h1>Hello Elham </h1>
     </HeroContainer>
   );
 }
