@@ -47,19 +47,23 @@ export const HeroItems = styled.div`
   font-weight: bold;
   justify-content: flex-end;
   height: 16rem;
+  margin-top: 3rem;
 `;
 export const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(1.5rem, 6vw, 5rem);
   margin-bottom: 1.5rem;
   letter-spacing: 3px;
   padding: 0 1rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
 `;
 export const HeroP = styled.p`
   margin-bottom: 2rem;
-  font-size: clamp(1rem, 1rem, 2rem);
+
+  font-size: 14px;
   width: 70%;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 `;
 export const VideoBg = styled.video`
   width: 100%;

@@ -24,9 +24,9 @@ function index() {
           <HeroH1>New Adventure</HeroH1>
           <HeroP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-            eiusmod temp{" "}
+            eiusmod temp Lorem ipsum dolor sit{" "}
           </HeroP>
-          <Button primary="true" big="true" round="true" to="/trips">
+          <Button primary="true" Upper="true" round="true" to="/trips">
             Travel Now
           </Button>
         </HeroItems>
