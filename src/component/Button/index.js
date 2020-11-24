@@ -24,7 +24,7 @@ export const Button = styled(Link)`
 export const NavButton = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 15px;
   @media screen and (max-width: 768px) {
     display: none;
   }

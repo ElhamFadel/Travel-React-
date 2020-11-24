@@ -18,8 +18,9 @@ function index() {
       <SliderLatest />
       <Features />
       <GalleryImage />
-      {/* <VideoSection /> */}
+
       <Question />
+      <VideoSection />
       <Form />
       <Footer />
     </>
