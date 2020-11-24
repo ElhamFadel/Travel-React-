@@ -1,9 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import ImageAbout from "../../assets/img/about-img.jpg";
 import { Para, H2, H3 } from "../../component/Typography";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import Container from "../../component/styles/Container";
+import { Section, Row, Column, Image, WraperImage } from "./element";
 function index() {
   return (
     <Section>
@@ -45,37 +44,5 @@ function index() {
     </Section>
   );
 }
-const Row = styled.div`
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: -15px;
-  margin-left: -15px;
-`;
-const Section = styled.div`
-  padding: 120px 0;
-`;
-const Column = styled.div`
-  flex: 60%;
-  max-width: 60%;
-  box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);
-  background: #fff;
-  padding: 55px 88px 80px 60px;
-`;
-const WraperImage = styled.div`
-  flex: 50%;
-  max-width: 50%;
-  z-index: 2;
-  position: relative;
-`;
-const Image = styled.div`
-  background-image: url(${ImageAbout});
-  width: 107%;
-  background-size: cover;
-  height: 100%;
-  z-index: 2;
-  margin-top: 90px;
-  position: absolute;
-  right: -30px;
-`;
+
 export default index;
