@@ -84,7 +84,7 @@ function index() {
   );
 }
 const Section = styled.div`
-  padding: 110px 0 100px 0;
+  padding: 100px 0 45px 0;
   background-color: #f9f9ff;
   overflow: hidden;
 `;
