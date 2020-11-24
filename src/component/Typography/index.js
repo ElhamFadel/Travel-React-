@@ -5,11 +5,15 @@ export const H2 = styled.h2`
   margin-bottom: 10px;
   color: #222222;
   font-size: clamp(30px, 2vw, 60px);
+  @media (max-width: 987px) {
+    text-align: center;
+  }
+
   //font-size: 30px;
 `;
 export const Para = styled.p`
   margin-bottom: 1rem;
-  color: #2d2d2dfc;
+  color: #777777;
   font-family: "Poppins", sans-serif;
   font-size: 11px;
   font-weight: 390;

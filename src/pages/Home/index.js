@@ -6,6 +6,7 @@ import OurSelectionReasone from "../../componentHome/ourSelectionReasone";
 import SliderLatest from "../../componentHome/SliderLatest/index";
 import GalleryImage from "../../componentHome/GalleryImage";
 import VideoSection from "../../componentHome/VideoSection";
+import Question from "../../componentHome/Question";
 import Form from "../../componentHome/Form";
 import Footer from "../../componentHome/Footer";
 function index() {
@@ -18,6 +19,7 @@ function index() {
       <Features />
       <GalleryImage />
       {/* <VideoSection /> */}
+      <Question />
       <Form />
       <Footer />
     </>
