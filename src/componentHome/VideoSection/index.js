@@ -1,16 +1,9 @@
 import React from "react";
 import Container from "../../component/styles/Container";
 import PlayImage from "../../assets/img/play.png";
-import { H4, H3 } from "../../component/Typography";
+import { Overlay } from "../../component/styles/GlobalStyle";
 
-import {
-  VideoSection,
-  Overlay,
-  VideoContent,
-  VideoInfo,
-  Head5,
-  Head6,
-} from "./Element";
+import { VideoSection, VideoContent, VideoInfo, Head5, Head6 } from "./Element";
 
 function index() {
   return (
