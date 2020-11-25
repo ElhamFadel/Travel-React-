@@ -1,7 +1,6 @@
-import Container from "../../component/styles/Container";
+import Container from "../styles/Container";
 import React from "react";
-import { H6 } from "../../component/Typography";
-import { Button } from "../../component/Button";
+import { H6 } from "../Typography";
 import {
   Footer,
   FooterRow,

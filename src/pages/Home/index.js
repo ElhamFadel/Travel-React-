@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../componentHome/Header";
+import Header from "../../component/Header";
 import Hero from "../../componentHome/Hero";
 import Features from "../../componentHome/Features";
 import OurSelectionReasone from "../../componentHome/ourSelectionReasone";
@@ -8,10 +8,12 @@ import GalleryImage from "../../componentHome/GalleryImage";
 import VideoSection from "../../componentHome/VideoSection";
 import Question from "../../componentHome/Question";
 import Form from "../../componentHome/Form";
-import Footer from "../../componentHome/Footer";
+import Footer from "../../component/Footer";
+import ScrollToTop from "../../component/ScrollToTop";
 function index() {
   return (
     <>
+      <ScrollToTop showBelow={250} />
       <Header />
       <Hero />
       <OurSelectionReasone />
