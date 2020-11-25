@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Para } from "../../component/Typography";
+import { Para } from "../Typography";
 import { Link } from "react-router-dom";
 
 export const Footer = styled.footer`

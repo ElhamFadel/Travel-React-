@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import * as B from "../../component/Button";
+import * as B from "../Button";
 import Logo from "../../assets/img/logo.png";
 import { FaBars } from "react-icons/fa";
 function index() {
