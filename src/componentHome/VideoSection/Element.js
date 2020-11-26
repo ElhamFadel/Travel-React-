@@ -14,15 +14,7 @@ export const VideoSection = styled.div`
     width: 100%;
   }
 `;
-export const Overlay = styled.div`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #000;
-  opacity: 0.4;
-`;
+
 export const VideoContent = styled.div`
   text-align: center;
   position: relative;

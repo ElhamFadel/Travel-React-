@@ -19,5 +19,14 @@ export const RowHead = styled.div`
   align-items: center;
   padding-bottom: 50px;
 `;
+export const Overlay = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.4;
+`;
 
 export default GlobalStyle;

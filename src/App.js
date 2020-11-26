@@ -1,6 +1,10 @@
 import "./App.css";
 import GlobalStyle from "./component/styles/GlobalStyle";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Trips from "./pages/Trips";
+// import Careers from "./pages/Careers";
+// import Trips from "./pages/Trips";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -8,15 +12,9 @@ function App() {
       <GlobalStyle />
       <Router>
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          {/* <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route> */}
+          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/about" component={About}></Route>
+          <Route exact path="/trips" component={Trips}></Route>
         </Switch>
       </Router>
     </div>
