@@ -1,12 +1,12 @@
 import React from "react";
+import Hero from "../../componentTrips/Hero";
+import TravelPackage from "../../componentTrips/TravelPackage";
 import Footer from "../../component/Footer";
-import Hero from "../../componentAbout/Hero";
-
 function index() {
   return (
-    <div className="about">
+    <div className="tripsPage">
       <Hero />
-
+      <TravelPackage />
       <Footer />
     </div>
   );
