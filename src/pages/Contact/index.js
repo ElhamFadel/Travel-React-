@@ -7,7 +7,6 @@ function index() {
   return (
     <div className="tripsPage">
       <GeneralHero title={"Contact Us"} image={image} />
-
       <Footer />
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../../componentTrips/Hero";
 import TravelPackage from "../../componentTrips/TravelPackage";
 import Footer from "../../component/Footer";
 import GeneralHero from "../../component/GeneralHero";
