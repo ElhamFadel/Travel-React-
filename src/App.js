@@ -3,6 +3,7 @@ import GlobalStyle from "./component/styles/GlobalStyle";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Trips from "./pages/Trips";
+import Contact from "./pages/Contact";
 // import Careers from "./pages/Careers";
 // import Trips from "./pages/Trips";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/trips" component={Trips}></Route>
+          <Route exact path="/contact" component={Contact}></Route>
         </Switch>
       </Router>
     </div>

@@ -1,15 +1,13 @@
 import React from "react";
-import Hero from "../../componentTrips/Hero";
-import TravelPackage from "../../componentTrips/TravelPackage";
 import Footer from "../../component/Footer";
 import GeneralHero from "../../component/GeneralHero";
-import image from "../../assets/img/trip.jpeg";
+import image from "../../assets/img/concat.jpeg";
 
 function index() {
   return (
     <div className="tripsPage">
-      <GeneralHero title={"Trips"} image={image} />
-      <TravelPackage />
+      <GeneralHero title={"Contact Us"} image={image} />
+
       <Footer />
     </div>
   );
