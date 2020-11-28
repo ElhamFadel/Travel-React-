@@ -7,7 +7,7 @@ import SliderLatest from "../../componentHome/SliderLatest/index";
 import GalleryImage from "../../componentHome/GalleryImage";
 import VideoSection from "../../componentHome/VideoSection";
 import Question from "../../componentHome/Question";
-import Form from "../../componentHome/Form";
+import Form from "../../component/Form";
 import Footer from "../../component/Footer";
 import ScrollToTop from "../../component/ScrollToTop";
 function index() {
