@@ -31,10 +31,6 @@ export const ParaImage = styled(Para)`
   line-height: 2;
 `;
 
-export const Img = styled.img`
-  width: 100%;
-`;
-
 export const Info = styled.div`
   flex: 50%;
   display: flex;
