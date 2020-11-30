@@ -4,11 +4,13 @@ import GeneralHero from "../../component/GeneralHero";
 import Map from "../../componentContact/Map";
 import image from "../../assets/img/concat.jpeg";
 import Form from "../../component/Form";
+import Communication from "../../componentContact/Communication";
 
 function index() {
   return (
     <div className="contactPage">
       <GeneralHero title={"Contact Us"} image={image} />
+      <Communication />
       <Map />
       <Form />
       <Footer />
