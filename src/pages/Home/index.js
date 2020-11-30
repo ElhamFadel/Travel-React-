@@ -13,7 +13,7 @@ import ScrollToTop from "../../component/ScrollToTop";
 function index() {
   return (
     <>
-      <ScrollToTop showBelow={250} />
+      <ScrollToTop showBelow={200} />
       <Header />
       <Hero />
       <OurSelectionReasone />
