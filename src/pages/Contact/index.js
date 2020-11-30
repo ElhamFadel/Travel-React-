@@ -6,11 +6,13 @@ import image from "../../assets/img/concat.jpeg";
 import Form from "../../component/Form";
 import Communication from "../../componentContact/Communication";
 import ScrollToTop from "../../component/ScrollToTop";
+import Chat from "../../component/Chat";
 
 function index() {
   return (
     <>
-      <ScrollToTop showBelow={200} />
+      <Chat />
+
       <div className="contactPage">
         <GeneralHero title={"Contact Us"} image={image} />
         <Communication />
