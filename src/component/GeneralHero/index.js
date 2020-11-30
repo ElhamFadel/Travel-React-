@@ -2,13 +2,14 @@ import React from "react";
 import Header from "../../component/Header";
 import { HeroImage, OverLayComn, H1 } from "./element";
 
-function index() {
+function index(props) {
+  const { title, image } = props;
   return (
     <div className="tripPage">
-      <HeroImage>
+      <HeroImage src={image}>
         <OverLayComn>
           <Header />
-          <H1>Trips</H1>
+          <H1>{title}</H1>
         </OverLayComn>
       </HeroImage>
     </div>

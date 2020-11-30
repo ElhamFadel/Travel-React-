@@ -2,12 +2,12 @@ import React from "react";
 import {
   OnePlace,
   WrapperImg,
-  Img,
   TitleImage,
   Info,
   ParaImage,
 } from "./elementForItems";
 import { H4 } from "../../component/Typography";
+import { Img } from "../../component/styles/GlobalStyle";
 
 function Item(props) {
   const { imgSrc, title, para, numberTickets, lastData } = props;

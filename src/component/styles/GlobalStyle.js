@@ -28,5 +28,8 @@ export const Overlay = styled.div`
   background: #000;
   opacity: 0.4;
 `;
+export const Img = styled.img`
+  width: 100%;
+`;
 
 export default GlobalStyle;

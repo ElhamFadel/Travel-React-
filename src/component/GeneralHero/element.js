@@ -2,7 +2,7 @@ import styled from "styled-components";
 import image from "../../assets/img/trip.jpeg";
 import { Overlay } from "../../component/styles/GlobalStyle";
 export const HeroImage = styled.div`
-  background-image: url(${image});
+  background-image: url(${(props) => props.src});
   position: relative;
   height: 100vh;
   background-repeat: no-repeat;

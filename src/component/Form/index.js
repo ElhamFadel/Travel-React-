@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../../component/styles/Container";
-import { RowHead } from "../../component/styles/GlobalStyle";
-import { H2, Para } from "../../component/Typography";
-import { Button } from "../../component/Button";
+import Container from "../styles/Container";
+import { RowHead } from "../styles/GlobalStyle";
+import { H2, Para } from "../Typography";
+import { Button } from "../Button";
 
 function index() {
   return (
