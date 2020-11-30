@@ -24,6 +24,7 @@ function index() {
                 onFocus={(e) => (e.target.placeholder = "")}
                 onBlur={(e) => (e.target.placeholder = "Enter your name")}
               ></FormInput>
+
               <FormInput
                 type="email"
                 name="email"
@@ -61,6 +62,7 @@ const Contact = styled.div`
   padding: 120px 0;
   overflow: hidden;
 `;
+
 const Side = styled.div`
   flex: 50%;
   max-width: 50%;
