@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../../component/styles/Container";
 import PlayImage from "../../assets/img/play.png";
 import { Overlay } from "../../component/styles/GlobalStyle";
+import styled from "styled-components";
+import Real from "./reactPlayer";
 
 import { VideoSection, VideoContent, VideoInfo, Head5, Head6 } from "./Element";
 
-function index() {
+function Index() {
   return (
     <VideoSection>
       <Overlay></Overlay>
       <Container>
         <VideoContent>
-          <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn">
-            <img src={PlayImage} alt="playImage" />
-          </a>
+          <Real />
         </VideoContent>
         <VideoInfo>
           <Head5>Being unique is the preference</Head5>
@@ -24,4 +24,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

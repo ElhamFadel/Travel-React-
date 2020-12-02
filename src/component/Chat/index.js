@@ -3,6 +3,7 @@ import { useWindowScroll } from "react-use";
 import { useScrollTo } from "react-use-window-scroll";
 import { BsChatDots } from "react-icons/bs";
 import styled from "styled-components";
+import Chat from "./Chat";
 
 export default function Index() {
   const { y } = useWindowScroll();
@@ -19,11 +20,12 @@ export default function Index() {
   return (
     <>
       {show && (
-        <Button
-          onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
-        >
-          <BsChatDots />
-        </Button>
+        <Chat />
+        // <Button
+        //   onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+        // >
+        //   <BsChatDots />
+        // </Button>
       )}
     </>
   );
