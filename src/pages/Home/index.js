@@ -18,7 +18,7 @@ function index() {
       <Hero />
       <OurSelectionReasone />
       <SliderLatest />
-      <Features />
+      {/* <Features /> */}
       <GalleryImage />
 
       <Question />

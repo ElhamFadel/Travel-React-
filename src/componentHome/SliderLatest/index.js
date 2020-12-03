@@ -22,7 +22,7 @@ function index() {
       <RowHead>
         <Container>
           <OwlCarousel className="owl-theme" items="1" loop autoplay center>
-            <Item class="item">
+            <Item className="item">
               <Image src={latest} alt="travel" />
               <RowHead className="info">
                 <H4>VECTOR ILLUSTRATION</H4>
@@ -33,7 +33,7 @@ function index() {
                 </Para>
               </RowHead>
             </Item>
-            <Item class="item">
+            <Item className="item">
               <Image src={latest} alt="travel" />
               <RowHead className="info">
                 <H4>VECTOR ILLUSTRATION</H4>
@@ -44,7 +44,7 @@ function index() {
                 </Para>
               </RowHead>
             </Item>
-            <Item class="item">
+            <Item className="item">
               <Image src={latest} alt="travel" />
               <RowHead className="info">
                 <H4>VECTOR ILLUSTRATION</H4>
@@ -55,7 +55,7 @@ function index() {
                 </Para>
               </RowHead>
             </Item>
-            <Item class="item">
+            <Item className="item">
               <Image src={latest} alt="travel" />
               <RowHead className="info">
                 <H4>VECTOR ILLUSTRATION</H4>
@@ -66,7 +66,7 @@ function index() {
                 </Para>
               </RowHead>
             </Item>
-            <Item class="item">
+            <Item className="item">
               <Image src={latest} alt="travel" />
               <RowHead className="info">
                 <H4>VECTOR ILLUSTRATION</H4>

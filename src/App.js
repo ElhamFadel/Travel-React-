@@ -12,11 +12,11 @@ function App() {
       <GlobalStyle />
       <Router>
         <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/about" component={About}></Route>
-          <Route exact path="/trips" component={Trips}></Route>
-          <Route exact path="/contact" component={Contact}></Route>
-          <Route exact path="/careers" component={Careers}></Route>
+          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/trips" render={() => <Trips />} />
+          <Route exact path="/contact" render={() => <Contact />} />
+          <Route exact path="/careers" render={() => <Careers />} />
         </Switch>
       </Router>
     </div>
