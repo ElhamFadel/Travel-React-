@@ -12,7 +12,7 @@ import {
   QueContent,
   QueSingle,
   FontCount,
-} from "./dataQuestion";
+} from "./ElementQuestion";
 //her i use react-countup library
 function Question() {
   return (

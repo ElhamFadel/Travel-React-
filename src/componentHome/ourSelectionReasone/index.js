@@ -3,7 +3,7 @@ import { Para, H2, H3 } from "../../component/Typography";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import Container from "../../component/styles/Container";
 import { Section, Row, Column, Image, WraperImage } from "./element";
-function index() {
+function SelectionReasone() {
   return (
     <Section>
       <Container>
@@ -45,4 +45,4 @@ function index() {
   );
 }
 
-export default index;
+export default SelectionReasone;
