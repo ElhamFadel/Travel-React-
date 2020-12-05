@@ -1,6 +1,6 @@
 import React from "react";
 import Rodal from "rodal";
-import PlayImage from "../../assets/img/play.png";
+import { PlayImage } from "../../assets/img";
 import ReactPlayer from "react-player";
 //Here I used two libraries 1- react-player  for playing a variety of URLs
 //2-  Rodal to give me the animation

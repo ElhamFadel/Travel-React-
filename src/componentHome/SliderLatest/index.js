@@ -6,10 +6,11 @@ import Container from "../../component/styles/Container";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import { Para, H2, H4 } from "../../component/Typography";
 import "./style.css";
-import latest from "../../assets/img/why.jpg";
+import { latest } from "../../assets/img";
 import { Item, Section, Image } from "./elementSliderSection";
+//Here I used a  owlCarousel library
 
-function index() {
+function SliderLatest() {
   return (
     <Section className="section-3">
       <RowHead>
@@ -84,4 +85,4 @@ function index() {
   );
 }
 
-export default index;
+export default SliderLatest;

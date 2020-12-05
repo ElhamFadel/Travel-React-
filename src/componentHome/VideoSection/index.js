@@ -5,7 +5,7 @@ import VideoPlayer from "./reactPlayer";
 
 import { VideoSection, VideoContent, VideoInfo, Head5, Head6 } from "./Element";
 
-function Index() {
+function SectionVideo() {
   return (
     <VideoSection>
       <Overlay></Overlay>
@@ -22,4 +22,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default SectionVideo;
