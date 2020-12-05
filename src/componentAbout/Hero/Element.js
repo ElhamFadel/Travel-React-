@@ -4,6 +4,7 @@ import { Para, H3 } from "../../component/Typography";
 export const ImageHero = styled.div`
   background-image: url(${image});
   position: relative;
+  z-index: 1;
 
   height: 120vh;
   background-repeat: no-repeat;
@@ -31,6 +32,12 @@ export const Wrapper = styled.div`
 `;
 export const NPara = styled(Para)`
   margin-bottom: 1rem;
-  color: #fff;
+  color: #ffffffbd;
   font-size: 14px;
+  z-index: 555px;
+`;
+export const ContainerPara = styled.div`
+  position: absolute;
+  z-index: 2;
+  width: 35%;
 `;
