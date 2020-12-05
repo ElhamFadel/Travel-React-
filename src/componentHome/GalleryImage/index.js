@@ -1,11 +1,11 @@
 import React from "react";
-import Image1 from "../../assets/img/1.jpeg";
-import Image2 from "../../assets/img/2.jpeg";
-import Image3 from "../../assets/img/3.jpeg";
-import Image4 from "../../assets/img/4.jpeg";
-import Image5 from "../../assets/img/5.jpeg";
-import Image6 from "../../assets/img/6.jpeg";
-import Image8 from "../../assets/img/8.jpeg";
+import { Gallery1 } from "../../assets/img";
+import { Gallery2 } from "../../assets/img";
+import { Gallery3 } from "../../assets/img";
+import { Gallery4 } from "../../assets/img";
+import { Gallery5 } from "../../assets/img";
+import { Gallery6 } from "../../assets/img";
+import { Gallery8 } from "../../assets/img";
 import "./style.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -32,52 +32,37 @@ const options = {
     "<i class='lnr lnr-arrow-down'></i>",
   ],
 };
-function index() {
+function GalleryImage() {
   return (
     <div>
       <OwlCarousel className="owl-theme" items={6} {...options}>
         <div className="item">
-          <img src={Image1} alt="image1" />
+          <img src={Gallery1} alt="image1" />
         </div>
         <div className="item">
-          <img src={Image2} alt="image2" />
+          <img src={Gallery2} alt="image2" />
         </div>
         <div className="item">
-          <img src={Image3} alt="image3" />
+          <img src={Gallery3} alt="image3" />
         </div>
         <div className="item">
-          <img src={Image4} alt="image4" />
+          <img src={Gallery4} alt="image4" />
         </div>
         <div className="item">
-          <img src={Image5} alt="image5" />
+          <img src={Gallery5} alt="image5" />
         </div>
         <div className="item">
-          <img src={Image6} alt="image6" />
+          <img src={Gallery6} alt="image6" />
         </div>
         <div className="item">
-          <img src={Image8} alt="image5" />
+          <img src={Gallery3} alt="image5" />
         </div>
         <div className="item">
-          <img src={Image6} alt="image6" />
+          <img src={Gallery8} alt="image6" />
         </div>
       </OwlCarousel>
-      {/* <div class="owl-controls">
-        <div class="owl-nav">
-          <div class="owl-prev">
-            <span class="lnr lnr-arrow-up"></span>
-          </div>
-          <div class="owl-next">
-            <span class="lnr lnr-arrow-down"></span>
-          </div>
-        </div>
-        <div class="owl-dots">
-          <div class="owl-dot active">
-            <span></span>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
 
-export default index;
+export default GalleryImage;

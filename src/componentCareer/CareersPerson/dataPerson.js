@@ -1,4 +1,4 @@
-import person1 from "../../assets/img/person1.jpeg";
+import Person1 from "../../assets/img/person1.jpeg";
 import person2 from "../../assets/img/person2.jpeg";
 import person3 from "../../assets/img/person3.jpeg";
 import person4 from "../../assets/img/person4.jpeg";
@@ -7,7 +7,7 @@ import person6 from "../../assets/img/person6.jpeg";
 
 export const people = [
   {
-    img: person1,
+    img: Person1,
     alt: "person1",
     name: "Saleem Fadel",
     careerName: "Company Manager",

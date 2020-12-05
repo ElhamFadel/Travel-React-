@@ -12,7 +12,7 @@ import {
   HeroP,
 } from "./elementHero";
 
-function index() {
+function Hero() {
   return (
     <HeroContainer>
       <HeroBg>
@@ -35,4 +35,4 @@ function index() {
   );
 }
 
-export default index;
+export default Hero;
