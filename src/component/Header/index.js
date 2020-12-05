@@ -56,9 +56,11 @@ function Index() {
           </Li>
         </NavMenu>
         <B.NavButton>
-          <B.Button primary="true" round="true" to="/trips">
-            Book a Flight
-          </B.Button>
+          {button && (
+            <B.Button primary="true" round="true" to="/trips">
+              Book a Flight
+            </B.Button>
+          )}
         </B.NavButton>
         <MobileIcon onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}

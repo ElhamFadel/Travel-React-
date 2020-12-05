@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -8,6 +7,7 @@ import { RowHead } from "../../component/styles/GlobalStyle";
 import { Para, H2, H4 } from "../../component/Typography";
 import "./style.css";
 import latest from "../../assets/img/why.jpg";
+import { Item, Section, Image } from "./elementSliderSection";
 
 function index() {
   return (
@@ -83,21 +83,5 @@ function index() {
     </Section>
   );
 }
-const Section = styled.div`
-  padding: 100px 0 45px 0;
-  background-color: #f9f9ff;
-  overflow: hidden;
-`;
-const Item = styled.div`
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  height: auto;
-`;
-const Image = styled.img`
-  display: block;
-  padding-bottom: 3rem;
-`;
 
 export default index;

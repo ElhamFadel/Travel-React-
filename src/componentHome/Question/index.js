@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import { Para, H2 } from "../../component/Typography";
 import CountUp from "react-countup";
-
 function index() {
   return (
     <QuestionSection>
