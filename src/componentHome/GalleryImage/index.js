@@ -32,7 +32,7 @@ const options = {
     "<i class='lnr lnr-arrow-down'></i>",
   ],
 };
-function index() {
+function GalleryImage() {
   return (
     <div>
       <OwlCarousel className="owl-theme" items={6} {...options}>
@@ -65,4 +65,4 @@ function index() {
   );
 }
 
-export default index;
+export default GalleryImage;
