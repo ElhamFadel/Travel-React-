@@ -7,3 +7,6 @@ export { default as Gallery6 } from "./6.jpeg";
 export { default as Gallery8 } from "./8.jpeg";
 export { default as PlayImage } from "./play.png";
 export { default as latest } from "./why.jpg";
+export { default as plane } from "./plane.svg";
+export { default as suitcase } from "./suitcase.svg";
+export { default as tent } from "./tent.svg";
