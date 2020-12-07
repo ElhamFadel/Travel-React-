@@ -5,7 +5,7 @@ import image from "../../assets/img/career.jpeg";
 import CareersPerson from "../../componentCareer/CareersPerson";
 import ScrollToTop from "../../component/ScrollToTop";
 
-function index() {
+function Careers() {
   return (
     <>
       <ScrollToTop showBelow={200} />
@@ -18,4 +18,4 @@ function index() {
   );
 }
 
-export default index;
+export default Careers;

@@ -24,7 +24,7 @@ const Form = () => {
           <Para>Who are in extremely love with eco friendly system.</Para>
         </RowHead>
 
-        <form action="#">
+        <form onClick={handleSubmit}>
           <RowForm>
             <Side>
               <FormInput
@@ -47,13 +47,13 @@ const Form = () => {
                 onBlur={(e) => (e.target.placeholder = "Enter email address")}
               ></FormInput>
               <FormInput
-                type="text"
-                name="subject"
-                placeholder="Enter your subject"
-                value={values.subject}
-                onChange={(e) => functions.setSubject(e.target.value)}
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                value={values.password}
+                onChange={(e) => functions.setPassword(e.target.value)}
                 onFocus={(e) => (e.target.placeholder = "")}
-                onBlur={(e) => (e.target.placeholder = "Enter your subject")}
+                onBlur={(e) => (e.target.placeholder = "Enter your password")}
               ></FormInput>
             </Side>
             <Side>

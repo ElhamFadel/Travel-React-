@@ -21,7 +21,7 @@ import {
   FaRegHeart,
   FaArrowRight,
 } from "react-icons/fa";
-function index() {
+function FooterSection() {
   return (
     <Footer>
       <Container>
@@ -81,4 +81,4 @@ function index() {
   );
 }
 
-export default index;
+export default FooterSection;

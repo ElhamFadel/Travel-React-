@@ -13,7 +13,7 @@ import {
 } from "./elementCard";
 import { Img } from "../../component/styles/GlobalStyle";
 import { people } from "./dataPerson";
-export default function index() {
+export default function CareersPerson() {
   return (
     <CareerPerson className="careerPerson">
       <Container>

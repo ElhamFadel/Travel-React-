@@ -4,7 +4,7 @@ import { H2 } from "../../component/Typography";
 import { Place } from "./dataPlace";
 import Item from "./Item";
 import { SectionTravel } from "./elementForItems";
-export default function index() {
+export default function TravelPackage() {
   return (
     <SectionTravel className="placesTravel">
       <H2>TRAVEL PACKAGES</H2>

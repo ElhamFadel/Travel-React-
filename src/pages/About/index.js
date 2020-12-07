@@ -3,7 +3,7 @@ import Footer from "../../component/Footer";
 import Hero from "../../componentAbout/Hero";
 import ScrollToTop from "../../component/ScrollToTop";
 
-function index() {
+function About() {
   return (
     <>
       <ScrollToTop showBelow={200} />
@@ -15,4 +15,4 @@ function index() {
   );
 }
 
-export default index;
+export default About;

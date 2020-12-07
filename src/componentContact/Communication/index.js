@@ -11,7 +11,7 @@ import {
   StyledLink,
   // LinkStyle,
 } from "./elementCard";
-function index() {
+function Communication() {
   return (
     <Section className="concatWay">
       <Container>
@@ -34,4 +34,4 @@ function index() {
   );
 }
 
-export default index;
+export default Communication;

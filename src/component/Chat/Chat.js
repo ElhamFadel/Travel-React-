@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import {
-  Widget,
-  addResponseMessage,
-  addLinkSnippet,
-  addUserMessage,
-  setQuickButtons,
-} from "react-chat-widget";
+import { Widget, addResponseMessage, setQuickButtons } from "react-chat-widget";
 import "./style.css";
 
 import "react-chat-widget/lib/styles.css";

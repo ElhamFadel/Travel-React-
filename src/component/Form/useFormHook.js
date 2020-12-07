@@ -1,15 +1,14 @@
 import { useState } from "react";
 import schema from "./validation";
-import { BrowserRouter as useHistory } from "react-router-dom";
 import axios from "axios";
 
 const useForm = () => {
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
-  const [subject, setSubject] = useState();
+  const [password, setPassword] = useState();
   const [name, setName] = useState("");
-  const values = { email, message, subject, name };
-  const functions = { setEmail, setMessage, setSubject, setName };
+  const values = { email, message, password, name };
+  const functions = { setEmail, setMessage, setPassword, setName };
   const [errors, setError] = useState({});
 
   //handleSubmit
@@ -26,27 +25,22 @@ const useForm = () => {
           newErrors[path] = message;
           setError({ errors: newErrors });
         });
-
-        // setError({ ...newErrors });
       });
 
-    if (true) {
-      console.log("Hello world");
-      axios
-        .post("https://fake-api-ahmed.herokuapp.com/v1/auth/signup", {
-          email,
-          message,
-          subject,
-          name,
-        })
-        .then((res) => {
-          console.log("Greete job hello world");
-        })
-        .catch((err) => {
-          let error = err.response.data.error;
-          setError({ error });
-        });
-    }
+    console.log("Hello world");
+    axios
+      .post("https://fake-api-ahmed.herokuapp.com/v1/auth/signup", {
+        email,
+        password,
+      })
+      .then((res) => {
+        console.log("Greete job hello world");
+      })
+      .catch((err) => {
+        console.log("kkkkkkk");
+        let error = err.response.data.error;
+        setError({ error });
+      });
   };
 
   return { values, handleSubmit, errors, functions };

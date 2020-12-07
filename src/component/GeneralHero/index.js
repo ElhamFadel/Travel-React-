@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../component/Header";
 import { HeroImage, OverLayComn, H1 } from "./element";
 
-function index(props) {
+function GeneralHero(props) {
   const { title, image } = props;
   return (
     <div className="tripPage">
@@ -16,4 +16,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default GeneralHero;

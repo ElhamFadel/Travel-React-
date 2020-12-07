@@ -5,10 +5,9 @@ import Map from "../../componentContact/Map";
 import image from "../../assets/img/concat.jpeg";
 import Form from "../../component/Form";
 import Communication from "../../componentContact/Communication";
-import ScrollToTop from "../../component/ScrollToTop";
 import Chat from "../../component/Chat";
 
-function index() {
+function Contact() {
   return (
     <>
       <Chat />
@@ -24,4 +23,4 @@ function index() {
   );
 }
 
-export default index;
+export default Contact;

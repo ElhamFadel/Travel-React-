@@ -3,7 +3,7 @@ import { useWindowScroll } from "react-use";
 import { useScrollTo } from "react-use-window-scroll";
 import styled from "styled-components";
 
-export default function Index() {
+export default function ScrollToTop() {
   const { y } = useWindowScroll();
   const [show, setShow] = useState(false);
   const scrollTo = useScrollTo();
