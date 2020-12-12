@@ -4,19 +4,19 @@ import { H2 } from "../../component/Typography";
 import { Place } from "./dataPlace";
 import Item from "./Item";
 import { SectionTravel, Row } from "./elementForItems";
-import Button from "../ButtonTrips";
+import Button, { Prev, Next } from "../ButtonTrips";
 
 export default function TravelPackage() {
   const [objectActive, setObject] = useState("place-1");
   const [id, getId] = useState(1);
   const [animate, setAnimate] = useState(true);
 
-  const prev = () => {
+  const prevOp = () => {
     setAnimate(false);
     if (id == 1) return getId(Object.keys(Place).length);
     return getId(id - 1);
   };
-  const Next = () => {
+  const NextOp = () => {
     setAnimate(false);
     if (id == Object.keys(Place).length) return getId(1);
     setAnimate(false);
@@ -55,7 +55,7 @@ export default function TravelPackage() {
           );
         })}
         <Row>
-          <Button onClick={prev}>prev</Button>
+          <Prev onClick={prevOp} />
           <Button onClick={handleClick} id="1" activeId={id}>
             1
           </Button>
@@ -71,7 +71,7 @@ export default function TravelPackage() {
           <Button onClick={handleClick} activeId={id} id="5">
             5
           </Button>
-          <Button onClick={Next}>Next</Button>
+          <Next onClick={NextOp} />
         </Row>
       </Container>
     </SectionTravel>

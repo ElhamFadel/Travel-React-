@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 function Button({ children, id, onClick, activeId }) {
+  const [active, isActive] = useState(false);
+
+  useEffect(() => {
+    isActive(false);
+    if (id == activeId) {
+      isActive(true);
+    }
+  }, [activeId]);
   return (
     <ButtonWrapper
-      className={activeId === id ? "active" : ""}
+      className={active ? "active" : ""}
       id={id}
       onClick={(e) => onClick(e.target.id)}
     >
       {children}
     </ButtonWrapper>
   );
+}
+export function Prev({ onClick }) {
+  return <ButtonWrapper onClick={onClick}>Previous</ButtonWrapper>;
+}
+
+export function Next({ onClick }) {
+  return <ButtonWrapper onClick={onClick}>Next</ButtonWrapper>;
 }
 
 const ButtonWrapper = styled.button`
