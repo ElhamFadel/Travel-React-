@@ -19,6 +19,9 @@ export const Side = styled.div`
     max-width: 100%;
     margin-bottom: 7rem;
   }
+  .error {
+    border-color: red;
+  }
 `;
 export const FormInput = styled.input`
   border-radius: 0;
@@ -63,12 +66,33 @@ export const TextArea = styled.textarea`
     outline: none;
   }
 `;
-export const ButtonSubmit = styled(Button)`
+export const ButtonSubmit = styled.button`
   position: relative;
   text-transform: uppercase;
   display: inline-block;
   margin-top: 1rem;
   font-size: 11px;
+  background: #f26a2e;
+  white-space: nowrap;
+  padding: 10px 32px;
+  color: #fff;
+  font-size: "16px";
+  outline: none;
+  border: none;
+  min-width: 100px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  text-transform: capitalize;
+  border-radius: 50px;
+  &:hover {
+    background: #ffa500;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
   &:hover span {
     right: 10px;
   }
@@ -81,4 +105,9 @@ export const SpanArrow = styled.span`
   right: 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+`;
+export const Message = styled.span`
+  font-size: 12px;
+  color: #a9a9a9;
+  margin-left: 1rem;
 `;

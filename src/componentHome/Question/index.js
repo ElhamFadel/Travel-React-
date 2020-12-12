@@ -1,6 +1,7 @@
 import React from "react";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 import { H2, Para } from "../../component/Typography";
 import {
   QuestionSection,
@@ -25,28 +26,52 @@ function Question() {
         <CounterLeft>
           <SingleCount>
             <FontNumber>
-              <CountUp start={59} end={5962} />
+              <CountUp start={59} end={5962} redraw={true}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
             </FontNumber>
             <Para>Projects Completed</Para>
           </SingleCount>
 
           <SingleCount>
             <FontNumber>
-              <CountUp start={23} end={2394} />
+              <CountUp start={23} end={2394} redraw={true}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
             </FontNumber>
             <Para>New Projects</Para>
           </SingleCount>
 
           <SingleCount>
             <FontNumber>
-              <CountUp start={14} end={1439} />
+              <CountUp start={14} end={1439} redraw={true}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
             </FontNumber>
             <Para>Tickets Submitted</Para>
           </SingleCount>
 
           <SingleCount>
             <FontNumber>
-              <CountUp start={9} end={933} />
+              <CountUp start={9} end={933} redraw={true}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
             </FontNumber>
             <Para>Cup of Coffee</Para>
           </SingleCount>
