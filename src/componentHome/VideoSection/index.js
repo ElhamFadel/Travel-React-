@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import Container from "../../component/styles/Container";
 import { Overlay } from "../../component/styles/GlobalStyle";
 import { PlayImage } from "../../assets/img";
-
-//Here I used two libraries 1- react-player  for playing a variety of URLs
-
 import {
   VideoSection,
   VideoContent,

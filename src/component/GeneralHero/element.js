@@ -26,6 +26,6 @@ export const H1 = styled.h1`
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   text-align: -webkit-center;
-  margin-top: 10rem;
+  margin-top: 15rem;
   color: #fff;
 `;

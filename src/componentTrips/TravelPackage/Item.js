@@ -10,10 +10,18 @@ import { H4 } from "../../component/Typography";
 import { Img } from "../../component/styles/GlobalStyle";
 
 function Item(props) {
-  const { imgSrc, title, para, numberTickets, lastData } = props;
+  const {
+    imgSrc,
+    title,
+    para,
+    numberTickets,
+    lastData,
+    animate,
+    delay,
+  } = props;
 
   return (
-    <OnePlace className="onePlace">
+    <OnePlace className="onePlace" animate={animate} delay={delay}>
       <WrapperImg className="wrapperImg">
         <Img src={imgSrc} alt="image src" />
       </WrapperImg>

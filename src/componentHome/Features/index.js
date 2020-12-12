@@ -21,8 +21,8 @@ function Features() {
           <Para>Who are in extremely love with eco friendly system.</Para>
         </RowHead>
         <Row>
-          {dataFeatuer.map((feature) => (
-            <Column>
+          {dataFeatuer.map((feature, index) => (
+            <Column key={`feature-${index}`}>
               <SingleFeature>
                 <HeadColumn>
                   <Iner className={feature.classIcon}></Iner>

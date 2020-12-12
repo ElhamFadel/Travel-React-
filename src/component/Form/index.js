@@ -12,9 +12,11 @@ import {
   TextArea,
   ButtonSubmit,
   SpanArrow,
+  Message,
 } from "./elementForm";
 const Form = () => {
-  const { values, handleSubmit, errors, functions } = useForm();
+  const { handleSubmit, state, dispatch } = useForm();
+  const { email, password, name, message, error, messageResponse } = state;
 
   return (
     <Contact>
@@ -24,51 +26,80 @@ const Form = () => {
           <Para>Who are in extremely love with eco friendly system.</Para>
         </RowHead>
 
-        <form onClick={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <RowForm>
             <Side>
               <FormInput
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                value={values.name}
-                onChange={(e) => functions.setName(e.target.value)}
+                value={name}
+                className={error.name && "error"}
+                onChange={(e) =>
+                  dispatch({
+                    type: "field",
+                    field: "name",
+                    value: e.target.value,
+                  })
+                }
                 onFocus={(e) => (e.target.placeholder = "")}
                 onBlur={(e) => (e.target.placeholder = "Enter your name")}
-              ></FormInput>
+              />
 
               <FormInput
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                value={values.email}
-                onChange={(e) => functions.setEmail(e.target.value)}
+                value={email}
+                className={error.email && "error"}
+                onChange={(e) =>
+                  dispatch({
+                    type: "field",
+                    field: "email",
+                    value: e.target.value,
+                  })
+                }
                 onFocus={(e) => (e.target.placeholder = "")}
                 onBlur={(e) => (e.target.placeholder = "Enter email address")}
-              ></FormInput>
+              />
               <FormInput
                 type="password"
                 name="password"
                 placeholder="Enter your password"
-                value={values.password}
-                onChange={(e) => functions.setPassword(e.target.value)}
+                className={error.password && "error"}
+                value={password}
+                onChange={(e) =>
+                  dispatch({
+                    type: "field",
+                    field: "password",
+                    value: e.target.value,
+                  })
+                }
                 onFocus={(e) => (e.target.placeholder = "")}
                 onBlur={(e) => (e.target.placeholder = "Enter your password")}
-              ></FormInput>
+              />
             </Side>
             <Side>
               <TextArea
                 placeholder="Messege"
                 name="message"
-                value={values.message}
-                onChange={(e) => functions.setMessage(e.target.value)}
+                value={message}
+                onChange={(e) =>
+                  dispatch({
+                    type: "field",
+                    field: "message",
+                    value: e.target.value,
+                  })
+                }
+                className={error.message && "error"}
                 onFocus={(e) => (e.target.placeholder = "")}
                 onBlur={(e) => (e.target.placeholder = "Messege")}
-              ></TextArea>
-              <ButtonSubmit primary="true" round="true" onClick={handleSubmit}>
+              />
+              <ButtonSubmit type="submit">
                 Send Message
-                <SpanArrow className="lnr lnr-arrow-right"></SpanArrow>
+                <SpanArrow className="lnr lnr-arrow-right" />
               </ButtonSubmit>
+              <Message>{messageResponse}</Message>
             </Side>
           </RowForm>
         </form>

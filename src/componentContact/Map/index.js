@@ -9,7 +9,7 @@ export class MapContainer extends Component {
         <Map google={this.props.google} zoom={14}>
           <Marker onClick={this.onMarkerClick} name={"Current location"} />
 
-          <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
+          <InfoWindow onClose={this.onInfoWindowClose} />
         </Map>
       </SectionMap>
     );
