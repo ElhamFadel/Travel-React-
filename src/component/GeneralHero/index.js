@@ -7,9 +7,10 @@ function GeneralHero(props) {
   return (
     <div className="tripPage">
       <HeroImage src={image}>
-        <OverLayComn />
         <Header />
-        <H1>{title}</H1>
+        <OverLayComn>
+          <H1>{title}</H1>
+        </OverLayComn>
       </HeroImage>
     </div>
   );

@@ -5,7 +5,6 @@ import { Place } from "./dataPlace";
 import Item from "./Item";
 import { SectionTravel, Row } from "./elementForItems";
 import Button from "../ButtonTrips";
-import { SlideInLeft } from "animate-css-styled-components";
 
 export default function TravelPackage() {
   const [objectActive, setObject] = useState("place-1");
@@ -35,6 +34,7 @@ export default function TravelPackage() {
       setAnimate(true);
     }, 1000);
   }, [id, animate]);
+
   return (
     <SectionTravel className="placesTravel">
       <H2>TRAVEL PACKAGES</H2>

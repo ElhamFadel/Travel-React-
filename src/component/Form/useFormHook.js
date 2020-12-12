@@ -1,48 +1,103 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import schema from "./validation";
 import axios from "axios";
-
+import { error } from "jquery";
+const initialState = {
+  email: "",
+  password: "",
+  name: "",
+  message: "",
+  isLodding: false,
+  send: false,
+  error: {
+    email: "",
+    password: "",
+    name: "",
+    message: "",
+  },
+  messageResponse: "",
+};
+function login(state, action) {
+  switch (action.type) {
+    case "field": {
+      return {
+        ...state,
+        [action.field]: action.value,
+        messageResponse: "",
+      };
+    }
+    case "login": {
+      return {
+        ...state,
+        send: true,
+        error: "",
+        messageResponse: "",
+      };
+    }
+    case "success": {
+      return {
+        ...state,
+        isLodding: true,
+        messageResponse: "Operation accomplished successfully",
+      };
+    }
+    case "validate": {
+      return {
+        ...state,
+        error: { ...error, ...action.error },
+      };
+    }
+    case "failure": {
+      return {
+        ...state,
+        isLodding: false,
+        messageResponse: "Try Agin",
+      };
+    }
+    case "deleteMess": {
+      return {
+        ...state,
+        messageResponse: " ",
+      };
+    }
+    default:
+      break;
+  }
+}
 const useForm = () => {
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
-  const [password, setPassword] = useState();
-  const [name, setName] = useState("");
-  const values = { email, message, password, name };
-  const functions = { setEmail, setMessage, setPassword, setName };
-  const [errors, setError] = useState({});
+  const [state, dispatch] = useReducer(login, initialState);
 
   //handleSubmit
   const handleSubmit = (event) => {
     event.preventDefault();
     schema
-      .validate(values, { abortEarly: false })
+      .validate(state, { abortEarly: false })
       .then(() => {
-        setError({ email: "", message: "", subject: "", name: "" });
+        dispatch({ type: "login" });
       })
       .catch((err) => {
         const newErrors = {};
         err.inner.forEach(({ path, message }) => {
           newErrors[path] = message;
-          setError({ errors: newErrors });
+          dispatch({ type: "validate", error: newErrors });
         });
       });
 
-    console.log("Hello world");
-    axios
-      .post("https://fake-api-ahmed.herokuapp.com/v1/auth/signup", {
-        email,
-        password,
-      })
-      .then((res) => {
-        console.log("Greete job hello world");
-      })
-      .catch((err) => {
-        console.log("kkkkkkk");
-        let error = err.response.data.error;
-        setError({ error });
-      });
+    if (state.send) {
+      axios
+        .post("https://fake-api-ahmed.herokuapp.com/v1/auth/signup", {
+          email: state.email,
+          password: state.password,
+        })
+        .then((res) => {
+          dispatch({ type: "success" });
+        })
+        .catch((err) => {
+          dispatch({ type: "failure" });
+        });
+    }
   };
 
-  return { values, handleSubmit, errors, functions };
+  return { handleSubmit, state, dispatch };
 };
 export default useForm;

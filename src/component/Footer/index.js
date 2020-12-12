@@ -11,8 +11,8 @@ import {
   FooterColumnSmall,
   ButtonArrow,
   LinkIcon,
+  HeartIcon,
 } from "./style";
-import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -35,11 +35,11 @@ function FooterSection() {
             <ParaForm>
               Copyright ©2020 All rights reserved | This template is made with
               {"  "}
-              <Link to="/">
+              <HeartIcon to="/">
                 <FaRegHeart />
-              </Link>
+              </HeartIcon>
               {"  "}
-              by <Link to="/"> Colorlib</Link>
+              by <HeartIcon to="/"> Colorlib</HeartIcon>
             </ParaForm>
           </FooterColumn>
           <FooterColumn>

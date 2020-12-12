@@ -71,8 +71,14 @@ export const ButtonArrow = styled.button`
 export const LinkIcon = styled(Link)`
   padding-right: 15px;
   font-size: 14px;
-  color: #9e9e9e;
+  color: #cccccc;
   &:hover {
     color: #ff5722;
   }
+`;
+export const HeartIcon = styled(Link)`
+  padding-right: 0px;
+  font-size: 11px;
+  color: #ff5722;
+  text-decoration: none;
 `;
