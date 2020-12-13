@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../../component/styles/Container";
 import { RowHead } from "../../component/styles/GlobalStyle";
 import { H2, Para, H4 } from "../../component/Typography";
@@ -10,9 +10,14 @@ import {
   SingleFeature,
   Iner,
   HeadColumn,
+  SpanToggle,
+  InerMoon,
 } from "./elementFeatures";
 
 function Features() {
+  const [light, isLight] = useState(true);
+  const [activeId, setId] = useState(-1);
+  const toggle = () => isLight(!light);
   return (
     <SectionFeature>
       <Container>
@@ -23,10 +28,21 @@ function Features() {
         <Row>
           {dataFeatuer.map((feature, index) => (
             <Column key={`feature-${index}`}>
-              <SingleFeature>
+              <SingleFeature light={light} active={activeId} id={index}>
                 <HeadColumn>
-                  <Iner className={feature.classIcon}></Iner>
+                  <Iner className={feature.classIcon} />
                   <H4>{feature.title}</H4>
+                  <SpanToggle
+                    light={light}
+                    id={index}
+                    active={activeId}
+                    onClick={() => {
+                      setId(index);
+                      toggle();
+                    }}
+                  >
+                    <InerMoon className="lnr lnr-moon" />
+                  </SpanToggle>
                 </HeadColumn>
                 <Para>{feature.Para}</Para>
               </SingleFeature>

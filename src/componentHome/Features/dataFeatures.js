@@ -7,7 +7,7 @@ export const dataFeatuer = [
   },
   {
     classIcon: "lnr lnr-license",
-    title: "Professional Service",
+    title: "Service",
     Para:
       " Usage of the Internet is becoming more common due to rapid  advancement of technology and power.",
   },
@@ -25,7 +25,7 @@ export const dataFeatuer = [
   },
   {
     classIcon: "lnr lnr-diamond",
-    title: "Highly Recomended",
+    title: "Recomended",
     Para:
       " Usage of the Internet is becoming more common due to rapid  advancement of technology and power.",
   },
