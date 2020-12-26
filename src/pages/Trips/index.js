@@ -1,9 +1,9 @@
 import React from "react";
-import TravelPackage from "../../componentTrips/TravelPackage";
-import Footer from "../../component/Footer";
-import GeneralHero from "../../component/GeneralHero";
+import TravelPackage from "../../group_component/componentTrips/TravelPackage";
+import Footer from "../../group_component/component/Footer";
+import GeneralHero from "../../group_component/component/GeneralHero";
 import image from "../../assets/img/trip.jpeg";
-import Feature from "../../componentTrips/Feature";
+import Feature from "../../group_component/componentTrips/Feature";
 
 function Trips() {
   return (

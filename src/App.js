@@ -1,5 +1,5 @@
 import "./App.css";
-import GlobalStyle from "./component/styles/GlobalStyle";
+import GlobalStyle from "./group_component/component/styles/GlobalStyle";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Trips from "./pages/Trips";

@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "../../component/Header";
-import Hero from "../../componentHome/Hero";
-import Features from "../../componentHome/Features";
-import OurSelectionReasone from "../../componentHome/ourSelectionReasone";
-import SliderLatest from "../../componentHome/SliderLatest";
-import GalleryImage from "../../componentHome/GalleryImage";
-import VideoSection from "../../componentHome/VideoSection";
-import Question from "../../componentHome/Question";
-import Form from "../../component/Form";
-import Footer from "../../component/Footer";
-import ScrollToTop from "../../component/ScrollToTop";
+import Header from "../../group_component/component/Header";
+import Hero from "../../group_component/componentHome/Hero";
+import Features from "../../group_component/componentHome/Features";
+import OurSelectionReasone from "../../group_component/componentHome/ourSelectionReasone";
+import SliderLatest from "../../group_component/componentHome/SliderLatest";
+import GalleryImage from "../../group_component/componentHome/GalleryImage";
+import VideoSection from "../../group_component/componentHome/VideoSection";
+import Question from "../../group_component/componentHome/Question";
+import Form from "../../group_component/component/Form";
+import Footer from "../../group_component/component/Footer";
+import ScrollToTop from "../../group_component/component/ScrollToTop";
 function Home() {
   return (
     <>

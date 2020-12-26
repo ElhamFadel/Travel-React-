@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "../../component/Footer";
-import GeneralHero from "../../component/GeneralHero";
-import Map from "../../componentContact/Map";
+import Footer from "../../group_component/component/Footer";
+import GeneralHero from "../../group_component/component/GeneralHero";
+import Map from "../../group_component/componentContact/Map";
 import image from "../../assets/img/concat.jpeg";
-import Form from "../../component/Form";
-import Communication from "../../componentContact/Communication";
-import Chat from "../../component/Chat";
+import Form from "../../group_component/component/Form";
+import Communication from "../../group_component/componentContact/Communication";
+import Chat from "../../group_component/component/Chat";
 
 function Contact() {
   return (
