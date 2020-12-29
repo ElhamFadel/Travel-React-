@@ -33,11 +33,13 @@
     .owl-theme .owl-dots .owl-dot span {
       margin: 0px 15px;
       background: #eeeeee;
+  }}
+  @media (max-width:426px) {
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      visibility: hidden;
   }
-    .owl-dots::after {
-      top: 97%;                                                                  
-      width: 70%;
-    }}
+   }
+
     
   
 

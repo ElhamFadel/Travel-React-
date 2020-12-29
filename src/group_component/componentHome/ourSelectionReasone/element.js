@@ -23,6 +23,10 @@ export const Row = styled.div`
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+  @media ${device.mobileL} {
+    margin: 0;
+    flex-wrap: wrap-reverse;
+  }
 `;
 export const Section = styled.div`
   padding: 120px 0;
@@ -46,6 +50,14 @@ export const Column = styled.div`
     padding: 10px 22px;
     max-width: 100%;
   }
+  @media ${device.mobileL} {
+    padding: 65px 25px 80px 25px;
+    max-width: 100%;
+  }
+  @media ${device.tablet} {
+    padding: 65px 40px 80px 60px;
+  }
+
   /* @media ${device.tablet} {
     padding: 55px 35px 35px 57px;
   } */
@@ -77,6 +89,11 @@ export const WraperImage = styled.div`
   } */
   @media ${device.mobileS} {
     max-width: 100%;
+    position: relative;
+  }
+  @media ${device.mobileL} {
+    max-width: 100%;
+    margin-top: 45px;
     position: relative;
   }
 `;

@@ -22,7 +22,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-height: 100%;
   margin-left: 3rem;
-  @media ${device.mobileS} {
+  @media ${device.mobileM} {
     margin-left: 0rem;
   }
   /* @media screen and (max-width: 360px) {

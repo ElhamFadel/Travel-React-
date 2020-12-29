@@ -13,6 +13,13 @@ export const VideoSection = styled.div`
   /* width: 1010px; */
   width: 100%;
   background-size: cover;
+  /* @media (max-width: 579px) {
+    height: 95vh;
+  } */
+  @media ${device.tablet} {
+    height: 115vh;
+  }
+
   /* @media (max-width: 987px) {
     width: 100%;
   }*/
