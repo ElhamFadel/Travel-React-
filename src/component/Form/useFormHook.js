@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import schema from "./validation";
 import axios from "axios";
-import { error } from "jquery";
+
 const initialState = {
   email: "",
   password: "",
