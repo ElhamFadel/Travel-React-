@@ -4,7 +4,7 @@ Travel Website React
  **Author: Elham Fadel**
  <br />
 Summary 📝
-Travel Website : is instagram simulation . Built with React 
+Travel Website : is SPA Website . Built with React 
 <br />
 It consists of five pages :
 <br />
