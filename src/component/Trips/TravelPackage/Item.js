@@ -6,8 +6,8 @@ import {
   Info,
   ParaImage,
 } from "./elementForItems";
-import { H4 } from "../../component/Typography";
-import { Img } from "../../component/styles/GlobalStyle";
+import { H4 } from "../../Typography";
+import { Img } from "../../styles/GlobalStyle";
 
 function Item(props) {
   const {

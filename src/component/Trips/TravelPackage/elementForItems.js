@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import { Para, H4 } from "../../component/Typography";
+import { Para, H4 } from "../../Typography";
 
 const leftToRight = keyframes`
    0% {transform: translateX(-500px) }

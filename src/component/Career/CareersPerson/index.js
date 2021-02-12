@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../component/styles/Container";
-import { H2 } from "../../component/Typography";
+import Container from "../../styles/Container";
+import { H2 } from "../../Typography";
 import {
   CardCareer,
   WraperInfo,
@@ -11,7 +11,7 @@ import {
   Cards,
   CareerPerson,
 } from "./elementCard";
-import { Img } from "../../component/styles/GlobalStyle";
+import { Img } from "../../styles/GlobalStyle";
 import { people } from "./dataPerson";
 export default function CareersPerson() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../component/Header";
-import { Overlay } from "../../component/styles/GlobalStyle";
+import Header from "../../Header";
+import { Overlay } from "../../styles/GlobalStyle";
 import { ImageHero, NPara, Wrapper, NH3, ContainerPara } from "./Element";
 function About() {
   return (

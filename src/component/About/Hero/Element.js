@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import image from "../../assets/img/about.jpeg";
-import { Para, H3 } from "../../component/Typography";
+import { Para, H3 } from "../../Typography";
 export const ImageHero = styled.div`
   background-image: url(${image});
   position: relative;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Container from "../../component/styles/Container";
-import { Overlay } from "../../component/styles/GlobalStyle";
-import { PlayImage } from "../../assets/img";
+import Container from "../../styles/Container";
+import { Overlay } from "../../styles/GlobalStyle";
+import { PlayImage } from "../../../assets/img";
 import {
   VideoSection,
   VideoContent,

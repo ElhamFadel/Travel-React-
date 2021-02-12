@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H3, H4, Para } from "../../component/Typography";
+import { H3, H4, Para } from "../../Typography";
 export const CardCareer = styled.div`
   display: flex;
   flex-direction: column;

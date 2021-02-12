@@ -1,6 +1,6 @@
-import { plane } from "../../assets/img";
-import { suitcase } from "../../assets/img";
-import { tent } from "../../assets/img";
+import { plane } from "../../../assets/img";
+import { suitcase } from "../../../assets/img";
+import { tent } from "../../../assets/img";
 export const data = [
   {
     icon: suitcase,

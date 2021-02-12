@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../../component/styles/Container";
+import Container from "../../styles/Container";
 import { Row, Card, Img, Title, WrapperImage } from "./elementFeature";
 import { data } from "./dataFeature";
-import { Para } from "../../component/Typography";
+import { Para } from "../../Typography";
 function Feature() {
   return (
     <Container>
