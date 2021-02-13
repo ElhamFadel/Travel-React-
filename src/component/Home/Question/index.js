@@ -1,8 +1,8 @@
 import React from "react";
-import { RowHead } from "../../component/styles/GlobalStyle";
+import { RowHead } from "../../styles/GlobalStyle";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import { H2, Para } from "../../component/Typography";
+import { H2, Para } from "../../Typography";
 import {
   QuestionSection,
   CounterLeft,

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Button = styled(Link)`
+const Button = styled(Link)`
   background: ${({ primary }) => (primary ? "#F26A2E" : "#077BF1")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 40px" : "10px 32px")};
@@ -29,3 +29,4 @@ export const NavButton = styled.div`
     display: none;
   }
 `;
+export default Button;

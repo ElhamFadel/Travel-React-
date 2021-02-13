@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../styles/Container";
-import { RowHead } from "../styles/GlobalStyle";
-import { H2, Para } from "../Typography";
-import useForm from "./useFormHook.js";
+import Container from "../../component/styles/Container";
+import { RowHead } from "../../component/styles/GlobalStyle";
+import { H2, Para } from "../../component/Typography";
+import useForm from "./../../Utilites/useFormHook";
 
 import {
   Contact,

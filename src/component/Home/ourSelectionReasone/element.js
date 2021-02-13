@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImageAbout from "../../assets/img/about-img.jpg";
+import ImageAbout from "../../../assets/img/about-img.jpg";
 export const Row = styled.div`
   margin-top: 40px;
   display: -webkit-box;

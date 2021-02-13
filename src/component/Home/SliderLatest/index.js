@@ -2,11 +2,11 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Container from "../../component/styles/Container";
-import { RowHead } from "../../component/styles/GlobalStyle";
-import { Para, H2, H4 } from "../../component/Typography";
+import Container from "../../styles/Container";
+import { RowHead } from "../../styles/GlobalStyle";
+import { Para, H2, H4 } from "../../Typography";
 import "./style.css";
-import { latest } from "../../assets/img";
+import { latest } from "../../../assets/img";
 import { Item, Section, Image } from "./elementSliderSection";
 //Here I used a  owlCarousel library
 

@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../../component/Footer";
-import GeneralHero from "../../component/GeneralHero";
 import image from "../../assets/img/career.jpeg";
-import CareersPerson from "../../componentCareer/CareersPerson";
-import ScrollToTop from "../../component/ScrollToTop";
+import CareersPerson from "../../component/Career/CareersPerson";
+import { GeneralHero, ScrollToTop } from "../../UI";
 
 function Careers() {
   return (

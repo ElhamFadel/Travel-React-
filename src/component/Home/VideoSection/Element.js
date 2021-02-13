@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imag from "../../assets/img/7.jpeg";
+import imag from "../../../assets/img/7.jpeg";
 import { FaTimes } from "react-icons/fa";
 export const VideoSection = styled.div`
   background-image: url(${imag});

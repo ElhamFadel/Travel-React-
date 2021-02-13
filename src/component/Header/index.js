@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as B from "../Button";
+import Button, { NavButton } from "../../UI/Button";
 import Logo from "../../assets/img/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Nav, NavLink, MobileIcon, Li, NavMenu } from "./elementHeader";
@@ -55,13 +55,13 @@ function Index() {
             </NavLink>
           </Li>
         </NavMenu>
-        <B.NavButton>
+        <NavButton>
           {button && (
-            <B.Button primary="true" round="true" to="/trips">
+            <Button primary="true" round="true" to="/trips">
               Book a Flight
-            </B.Button>
+            </Button>
           )}
-        </B.NavButton>
+        </NavButton>
         <MobileIcon onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </MobileIcon>

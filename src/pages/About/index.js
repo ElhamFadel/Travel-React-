@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../component/Footer";
-import Hero from "../../componentAbout/Hero";
-import ScrollToTop from "../../component/ScrollToTop";
+import Hero from "../../component/About/Hero";
+import { ScrollToTop } from "../../UI";
 
 function About() {
   return (

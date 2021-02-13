@@ -1,11 +1,14 @@
 import React from "react";
-import { Gallery1 } from "../../assets/img";
-import { Gallery2 } from "../../assets/img";
-import { Gallery3 } from "../../assets/img";
-import { Gallery4 } from "../../assets/img";
-import { Gallery5 } from "../../assets/img";
-import { Gallery6 } from "../../assets/img";
-import { Gallery8 } from "../../assets/img";
+import {
+  Gallery1,
+  Gallery2,
+  Gallery3,
+  Gallery4,
+  Gallery5,
+  Gallery6,
+  Gallery8,
+} from "../../../assets/img";
+
 import "./style.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";

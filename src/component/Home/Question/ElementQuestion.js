@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Para } from "../../component/Typography";
+import { Para } from "../../Typography";
 export const QuestionSection = styled.div`
   overflow: hidden;
   padding: 5rem 0;

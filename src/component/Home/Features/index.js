@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Container from "../../component/styles/Container";
-import { RowHead } from "../../component/styles/GlobalStyle";
-import { H2, Para, H4 } from "../../component/Typography";
+import Container from "../../styles/Container";
+import { RowHead } from "../../styles/GlobalStyle";
+import { H2, Para, H4 } from "../../Typography";
 import { dataFeatuer } from "./dataFeatures";
 import {
   SectionFeature,

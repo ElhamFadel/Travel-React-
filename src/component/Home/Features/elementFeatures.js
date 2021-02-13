@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H4 } from "../../component/Typography";
+import { H4 } from "../../Typography";
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../../component/Button";
-import video from "../../assets/videos/video.mp4";
+import video from "../../../assets/videos/video.mp4";
+import Button from "../../../UI/Button";
 import {
   HeroContainer,
   HeroBg,

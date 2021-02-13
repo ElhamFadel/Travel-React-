@@ -1,6 +1,6 @@
 import React from "react";
-import { H4 } from "../../component/Typography";
-import Container from "../../component/styles/Container";
+import { H4 } from "../../Typography";
+import Container from "../../styles/Container";
 import { comminWay } from "./data";
 import {
   Section,

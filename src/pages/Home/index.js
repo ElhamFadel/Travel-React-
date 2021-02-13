@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "../../component/Header";
-import Hero from "../../componentHome/Hero";
-import Features from "../../componentHome/Features";
-import OurSelectionReasone from "../../componentHome/ourSelectionReasone";
-import SliderLatest from "../../componentHome/SliderLatest";
-import GalleryImage from "../../componentHome/GalleryImage";
-import VideoSection from "../../componentHome/VideoSection";
-import Question from "../../componentHome/Question";
-import Form from "../../component/Form";
+import {
+  VideoSection,
+  GalleryImage,
+  SliderLatest,
+  OurSelectionReasone,
+  Features,
+  Question,
+  Hero,
+} from "../../component/Home";
+import { Form } from "../../UI";
 import Footer from "../../component/Footer";
-import ScrollToTop from "../../component/ScrollToTop";
+import { ScrollToTop } from "../../UI";
 function Home() {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Para, H2, H3 } from "../../component/Typography";
-import { RowHead } from "../../component/styles/GlobalStyle";
-import Container from "../../component/styles/Container";
+import { Para, H2, H3 } from "../../Typography";
+import { RowHead } from "../../styles/GlobalStyle";
+import Container from "../../styles/Container";
 import { Section, Row, Column, Image, WraperImage } from "./element";
 function SelectionReasone() {
   return (

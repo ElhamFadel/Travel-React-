@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-function CareerCard() {
-  return <div></div>;
-}
+// function CareerCard() {
+//   return <div></div>;
+// }
 
-export default CareerCard;
+// export default CareerCard;
